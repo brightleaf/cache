@@ -1,20 +1,16 @@
-# My Custom Module
+# Cache
 
-```
-- .assets
--- extend.css
--- head.html
--- foot.html
-- .circleci
--- config.yml
-- src
--- index.js
--- __tests__
---- index.test.js
-- .eslintrc.json
-- .gitignore
-- package.json
-- readme.md
+Redis cache module.
 
+```javascript
+const Cache = require('@brightleaf/cache')
+const cache = new Cache()
+
+;(async () => {
+  const results = await expensiveCall()
+  cache.set('results', results)
+
+  const fromCache = await cache.get('results')
+})()
 ```
 
