@@ -1,5 +1,7 @@
 # Cache
 
+[![npm version](https://badge.fury.io/js/%40brightleaf%2Fcache.svg)](https://badge.fury.io/js/%40brightleaf%2Fcache)
+
 Redis cache module.
 
 ```javascript
