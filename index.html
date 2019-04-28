@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <title>@brightleaf/cache -  - Kevin Isom <kevin.isom@gmail.com></title>
+  <link rel="stylesheet" type="text/css" href="styles.css" />
+  <link rel="stylesheet" type="text/css" href="extend.css" />
+  <meta name="description" content="" />
+  <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+  <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.14.2/styles/github.min.css" />
+
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta property="og:title" content="@brightleaf/cache -  - Kevin Isom <kevin.isom@gmail.com>" />
+  <meta property="og:type" content="website" />
+  <meta property="og:description" content="@brightleaf/cache -  - Kevin Isom <kevin.isom@gmail.com>" />
+  <meta property="og:url" content="https://brightleaf.github.io/cache" />
+  <meta property="og:image" content="https://avatars3.githubusercontent.com/u/62547?s=400&amp;v=4" />
+
+  <meta name="twitter:card" content="summary" />
+  <meta name="twitter:site" content="@kev_nz" />
+  <meta name="twitter:title" content="@brightleaf/cache -  - Kevin Isom <kevin.isom@gmail.com>" />
+  <meta name="twitter:description" content="@brightleaf/cache -  - Kevin Isom <kevin.isom@gmail.com>" />
+  <meta name="twitter:image" content="https://avatars3.githubusercontent.com/u/62547?s=400&amp;v=4" />
+
+</head>
+
+<body>
+  <div class="container">
+  <h1 id="cache">Cache</h1>
+<p>Redis cache module.</p>
+<pre><code class="hljs javascript language-javascript"><span class="hljs-keyword">const</span> Cache = <span class="hljs-built_in">require</span>(<span class="hljs-string">'@brightleaf/cache'</span>)
+<span class="hljs-keyword">const</span> cache = <span class="hljs-keyword">new</span> Cache()
+
+;<span class="hljs-function">(<span class="hljs-params"><span class="hljs-keyword">async</span> (</span>) =&gt;</span> {
+  <span class="hljs-keyword">const</span> results = <span class="hljs-keyword">await</span> expensiveCall()
+  cache.set(<span class="hljs-string">'results'</span>, results)
+
+  <span class="hljs-keyword">const</span> fromCache = <span class="hljs-keyword">await</span> cache.get(<span class="hljs-string">'results'</span>)
+})()</code></pre>
+  </div>
+<script async src="https://www.googletagmanager.com/gtag/js?id=UA-64038939-2"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag() { dataLayer.push(arguments); }
+  gtag('js', new Date());
+
+  gtag('config', 'UA-64038939-2');
+</script>
+
+</body>
