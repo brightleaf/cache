@@ -1,7 +1,50 @@
 {
-  "name": "cache",
+  "name": "@brightleaf/cache",
+  "version": "1.0.0",
+  "private": false,
   "scripts": {
-    "test": "echo \"This is a placeholder\" && exit 0"
+    "test": "mocha ./src/test",
+    "lint": "eslint ./src",
+    "watch": "npm-run-all --parallel dev:**"
   },
-  "version": "1.0.0"
+  "repository": {
+    "type": "git",
+    "url": "git+ssh://git@github.com/brightleaf/cache.git"
+  },
+  "keywords": [
+    "async",
+    "await",
+    "utils",
+    "redis",
+    "cache",
+    "asynchronous",
+    "async tools",
+    "promises",
+    "helpers"
+  ],
+  "author": "Kevin Isom <kevin.isom@gmail.com>",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/brightleaf/cache/issues"
+  },
+  "homepage": "https://brightleaf.github.io/cache",
+  "files": [
+    "/src"
+  ],
+  "devDependencies": {
+    "@kev_nz/eslint-config": "^3.3.0",
+    "@kev_nz/publisher": "^4.0.0",
+    "chai": "^4.2.0",
+    "coveralls": "^3.0.3",
+    "eslint": "^5.16.0",
+    "fuxor": "^2.2.5",
+    "ioredis-mock": "^4.9.0",
+    "jest": "^24.7.1",
+    "mocha": "^6.1.4",
+    "nyc": "^14.0.0"
+  },
+  "dependencies": {
+    "@kev_nz/async-tools": "^1.2.0",
+    "ioredis": "^4.9.0"
+  }
 }
