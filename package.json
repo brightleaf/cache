@@ -5,7 +5,10 @@
   "scripts": {
     "test": "mocha ./src/test",
     "lint": "eslint ./src",
-    "watch": "npm-run-all --parallel dev:**"
+    "watch": "npm-run-all --parallel dev:**",
+    "preversion": "npm test",
+    "postversion": "npm publish --access=public",
+    "postpublish": "git push origin --all --follow-tags"
   },
   "repository": {
     "type": "git",
