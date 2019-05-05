@@ -8,7 +8,7 @@
     "watch": "npm-run-all --parallel dev:**",
     "preversion": "npm test",
     "postversion": "npm publish --access=public",
-    "postpublish": "git push origin --all --follow-tags"
+    "postpublish": "git push origin --all --follow-tags && npx publisher"
   },
   "repository": {
     "type": "git",
@@ -32,9 +32,9 @@
   },
   "homepage": "https://brightleaf.github.io/cache",
   "files": [
-    "/src"
+    "./src"
   ],
-  "main": "/src/index.js",
+  "main": "./src/index.js",
   "devDependencies": {
     "@kev_nz/eslint-config": "^3.3.0",
     "@kev_nz/publisher": "^4.0.0",
