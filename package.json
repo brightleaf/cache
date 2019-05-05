@@ -32,7 +32,7 @@
   },
   "homepage": "https://brightleaf.github.io/cache",
   "files": [
-    "./src"
+    "/src"
   ],
   "main": "./src/index.js",
   "devDependencies": {
