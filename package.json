@@ -31,6 +31,7 @@
   "files": [
     "/src"
   ],
+  "main": "/src/index.js",
   "devDependencies": {
     "@kev_nz/eslint-config": "^3.3.0",
     "@kev_nz/publisher": "^4.0.0",
