@@ -36,19 +36,18 @@
   ],
   "main": "./src/index.js",
   "devDependencies": {
-    "@kev_nz/eslint-config": "^3.3.0",
-    "@kev_nz/publisher": "^4.0.0",
+    "@kev_nz/eslint-config": "^5.2.0",
+    "@kev_nz/publisher": "^4.0.1",
     "chai": "^4.2.0",
-    "coveralls": "^3.0.3",
-    "eslint": "^5.16.0",
-    "fuxor": "^2.2.5",
-    "ioredis-mock": "^4.9.0",
-    "jest": "^24.7.1",
-    "mocha": "^6.1.4",
-    "nyc": "^14.0.0"
+    "coveralls": "^3.0.11",
+    "eslint": "^6.8.0",
+    "fuxor": "^2.2.6",
+    "ioredis-mock": "^4.19.0",
+    "mocha": "^7.1.1",
+    "nyc": "^15.0.0"
   },
   "dependencies": {
-    "@kev_nz/async-tools": "^1.2.0",
-    "ioredis": "^4.9.0"
+    "@kev_nz/async-tools": "^1.2.3",
+    "ioredis": "^4.16.1"
   }
 }
