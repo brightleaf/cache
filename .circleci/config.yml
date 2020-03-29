@@ -1,5 +1,28 @@
 version: 2
 jobs:
+  "node-13":
+    docker:
+      - image: circleci/node:13
+    working_directory: ~/app
+    steps:
+      - checkout
+
+      - run: npm install
+      - run: npm run lint
+      # run tests!
+      - run: npm test
+      - run: npm run coverage
+  "node-12":
+    docker:
+      - image: circleci/node:12
+    working_directory: ~/app
+    steps:
+      - checkout
+      - run: npm install
+      - run: npm run lint
+      # run tests!
+      - run: npm test
+      - run: npm run coverage
   "node-11":
     docker:
       - image: circleci/node:11
@@ -37,6 +60,8 @@ workflows:
   version: 2
   build:
     jobs:
+      - "node-13"
+      - "node-12"
       - "node-11"
       - "node-10"
       - "node-8"
