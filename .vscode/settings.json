@@ -4,12 +4,15 @@
   "[javascript]": {
     "editor.formatOnSave": false
   },
-
   "workbench.colorCustomizations": {
     "titleBar.activeBackground": "#28ad00",
     "titleBar.inactiveBackground": "#34ea2ecc",
     "titleBar.activeForeground": "#FFF",
-    "titleBar.inactiveForeground": "#FFFFFFCC"
+    "titleBar.inactiveForeground": "#FFFFFFCC",
+    "statusBar.background": "#28ad00",
+    "activityBar.background": "#28ad00",
+    "activityBar.foreground": "#FFF",
+    "activityBar.activeBackground": "#175c02"
   },
   "vsicons.presets.jsOfficial": true,
   "vsicons.presets.jsonOfficial": true,
@@ -63,5 +66,8 @@
       "filename": true,
       "format": "svg"
     }
-  ]
+  ],
+  "editor.codeActionsOnSave": {
+    "source.fixAll.eslint": true
+  }
 }
